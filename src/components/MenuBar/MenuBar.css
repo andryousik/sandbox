@@ -1,0 +1,85 @@
+  /* ITEM */
+
+  .item-button {
+    width: 238px;
+    height: 44px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: 'Goldman', sans-serif;
+    margin: 20px;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+  }
+
+  .item-button:hover {
+    background-color: rgba(27, 89, 248, 0.1); 
+  }
+
+/* Текст с цветом 1B59F8 (100% насыщенности) при наведении */
+  .item-button:hover .item-text {
+    color: #1B59F8; 
+  }
+
+  .item-icon {
+    margin-right: 10px;
+  }
+
+  /* Иконки */
+  .item-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: filter 0.3s ease-in-out; /* Плавное изменение фильтра */
+  }
+
+  .item-button:hover .item-icon img {
+    filter: invert(20%) sepia(90%) saturate(3000%) hue-rotate(190deg) brightness(80%) contrast(120%);
+
+
+  }
+
+  .item-text {
+    color: #00000070;
+    display: flex;
+    align-items: center;
+    font-family: 'Goldman', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
+  /*Account menu*/
+  .account-title {
+    margin-left: 22px;
+    color: #00000070; 
+    font-family: 'Goldman', sans-serif; 
+    font-size: 24px;           
+    font-weight: 400; 
+  }
+
+  /*Logo*/
+  .logo{
+      
+    color: #111;
+    font-family: 'Goldman', sans-serif;
+    font-size: 36px;
+    font-weight: 1000; 
+    }
+
+
+/*Кнопка выбранной страницы*/
+.item-button.active {
+  background-color: rgba(27, 89, 248, 0.2); /* Подсветка фона */
+}
+
+.item-button.active .item-text {
+  color: #1B59F8; /* Подсветка текста */
+}
+
+.item-button.active .item-icon img {
+  filter: invert(20%) sepia(90%) saturate(3000%) hue-rotate(190deg) brightness(80%) contrast(120%);
+}

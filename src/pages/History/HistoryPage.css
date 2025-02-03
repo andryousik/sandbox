@@ -1,0 +1,9 @@
+.history {
+  flex: 1; /* Занимает все оставшееся пространство */
+  margin-left: 321px; /* Сдвигаем вправо, чтобы не перекрывать MenuBar */
+  height: 100vh;
+  overflow-y: auto; /* Включаем скролл только внутри Body */
+  padding: 20px; /* Отступ для контента */
+  background-color: #F3F3F3;
+}
+

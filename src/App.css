@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+.App__inner {
+  display: flex; /* Размещаем элементы в строку */
+  height: 100vh; /* Высота на весь экран */
+  overflow: hidden; /* Чтобы не было двойного скролла */
+}
+
+.MenuBar {
+  width: 320px; /* Ширина бокового меню */
+  height: 100vh; /* Высота на весь экран */
+  position: fixed; /* Фиксируем слева */
+  left: 0;
+  top: 0;
+  background-color: #fff; /* Цвет фона */
+  display: flex;
+  flex-direction: column; /* Элементы в колонку */
+  align-items: center; /* Выравнивание по центру */
+  
+}
+
+.Body {
+  flex: 1; /* Занимает все оставшееся пространство */
+  margin-left: 321px; /* Сдвигаем вправо, чтобы не перекрывать MenuBar */
+  height: 100vh;
+  overflow-y: auto; /* Включаем скролл только внутри Body */
+  padding: 20px; /* Отступ для контента */
+  background-color: #F3F3F3;
+}
+
+
