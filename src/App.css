@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 
 .App__inner {
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  background-color: #F3F3F3;
+  scroll-behavior: smooth; /* Плавная прокрутка */
   display: flex; /* Размещаем элементы в строку */
   height: 100vh; /* Высота на весь экран */
-  overflow: hidden; /* Чтобы не было двойного скролла */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
 
 .MenuBar {
@@ -18,14 +21,4 @@
   align-items: center; /* Выравнивание по центру */
   
 }
-
-.Body {
-  flex: 1; /* Занимает все оставшееся пространство */
-  margin-left: 321px; /* Сдвигаем вправо, чтобы не перекрывать MenuBar */
-  height: 100vh;
-  overflow-y: auto; /* Включаем скролл только внутри Body */
-  padding: 20px; /* Отступ для контента */
-  background-color: #F3F3F3;
-}
-
 

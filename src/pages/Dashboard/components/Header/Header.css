@@ -1,0 +1,28 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  color: #000000;
+  font-family: 'Goldman', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.date {
+  color: #000000;
+  font-family: 'Goldman', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.time {
+  font-weight: bold;
+  color: #000000;
+  font-family: 'Goldman', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 5px 0;
+}

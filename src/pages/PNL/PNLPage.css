@@ -1,9 +1,19 @@
-.pnl {
-  flex: 1; /* Занимает все оставшееся пространство */
-  margin-left: 321px; /* Сдвигаем вправо, чтобы не перекрывать MenuBar */
-  height: 100vh;
-  overflow-y: auto; /* Включаем скролл только внутри Body */
-  padding: 20px; /* Отступ для контента */
-  background-color: #F3F3F3;
+/* Обновленные стили для .pnl */
+.pnl-page{
+  display: flex;
+  flex-direction: column;
+  margin-left: 321px;
+  padding: 20px;
+  width: 100%; 
+  max-width: 1550px;
+  box-sizing: border-box; 
 }
 
+.divider {
+  margin: 10px 0; 
+  border: 1px solid #ddd; 
+}
+
+.Header, .SelectContainer, .Earnings, .ContainersEarning, .EnergySpent, .Income, .Revenue {
+  margin-bottom: 20px; 
+}

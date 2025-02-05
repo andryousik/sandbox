@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Header from './components/Header';
-import TimeFrameSelector from './components/TimeFrameSelector';
-import Stats from './components/Stats';
-import ContainerStatus from './components/ContainerStatus';
-import PNL from './components/PNL';
+import Header from './components/Header/Header';
+import TimeFrameSelector from './components/TimeFrameSelector/TimeFrameSelector';
+import Stats from './components/Stats/Stats';
+import ContainerStatus from './components/ContainerStatus/ContainerStatus';
+import PNL from './components/PNL/PNL';
 
 
 const DashboardPage = () => {
@@ -20,7 +20,6 @@ const DashboardPage = () => {
       <Stats 
       selectedTimeframe={selectedTimeframe} 
       setSelectedTimeframe={setSelectedTimeframe}/>
-
       <ContainerStatus />
       <PNL />
     </div>

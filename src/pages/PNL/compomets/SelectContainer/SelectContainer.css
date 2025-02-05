@@ -1,0 +1,33 @@
+/* TimeFrame */
+.container-select {
+  color: #00000070;
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 340px;
+  min-width: 200px;
+  min-height: 27px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+}
+
+.container-select select {
+  color: #000000;
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}

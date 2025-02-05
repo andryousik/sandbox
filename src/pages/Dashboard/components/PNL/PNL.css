@@ -1,0 +1,36 @@
+/* Обновленные стили для .pnl */
+.pnl {
+  display: flex;
+  flex-wrap: wrap; /* Даем возможность компонентам переноситься на новую строку, если они не помещаются */
+  gap: 20px; /* Добавим отступ между левой и правой панелью */
+  width: 1550px; /* Обеспечим полную ширину контейнера */
+  margin-top: 20px;
+}
+
+/* Стиль для левой панели */
+.left {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden; /* Убираем возможную прокрутку внутри */
+}
+
+/* Стиль для правой панели */
+.right {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: 2;
+}
+

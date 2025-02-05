@@ -1,34 +1,47 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MenuBar from "./components/MenuBar/MenuBar";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MenuBar from './components/MenuBar/MenuBar';
 
-import DashboardPage from "./pages/Dashboard/DashboardPage";
-import "./pages/Dashboard/DashboardPage.css";
 
-import ControlPanelPage from "./pages/ControlPanel/ControlPanelPage";
-import "./pages/ControlPanel/ControlPanelPage.css";
+/*Dashboard*/
+import DashboardPage from './pages/Dashboard/DashboardPage';
+import './pages/Dashboard/DashboardPage.css';
+import './pages/Dashboard/components/ContainerStatus/ContainerStatus';
+import './pages/Dashboard/components/ContainerStatus/ContainerStatus.css';
+import './pages/Dashboard/components/Header/Header';
+import './pages/Dashboard/components/Header/Header.css';
+import './pages/Dashboard/components/PNL/PNL';
+import './pages/Dashboard/components/PNL/PNL.css';
+import './pages/Dashboard/components/Stats/Stats';
+import './pages/Dashboard/components/Stats/Stats.css';
+import './pages/Dashboard/components/TimeFrameSelector/TimeFrameSelector';
+import './pages/Dashboard/components/TimeFrameSelector/TimeFrameSelector.css';
 
-import PNLPage from "./pages/PNL/PNLPage";
-import "./pages/PNL/PNLPage.css";
 
-import HistoryPage from "./pages/History/HistoryPage";
-import  "./pages/History/HistoryPage.css";
+import ControlPanelPage from './pages/ControlPanel/ControlPanelPage';
+import './pages/ControlPanel/ControlPanelPage.css';
 
-import SecurityPage from "./pages/Security/SecurityPage";
-import  "./pages/Security/SecurityPage.css";
+import PNLPage from './pages/PNL/PNLPage';
+import './pages/PNL/PNLPage.css';
 
-import LoginPage from "./pages/Login/LoginPage";
-import "./pages/Login/LoginPage.css";
+import HistoryPage from './pages/History/HistoryPage';
+import './pages/History/HistoryPage.css';
 
-import ProfilePage from "./pages/Profile/ProfilePage";
-import "./pages/Profile/ProfilePage.css";
+import SecurityPage from './pages/Security/SecurityPage';
+import './pages/Security/SecurityPage.css';
 
-import "./App.css";
+import LoginPage from './pages/Login/LoginPage';
+import './pages/Login/LoginPage.css';
 
+import ProfilePage from './pages/Profile/ProfilePage';
+import './pages/Profile/ProfilePage.css';
+
+import './App.css';
 
 function App() {
   return (
-    <Router> {/* Используем BrowserRouter как Router */}
+    <Router>
+      {/* Используем BrowserRouter как Router */}
       <div className="App__inner">
         <MenuBar />
         <Routes>
