@@ -1,0 +1,64 @@
+/* Контейнер для выпадающего списка */
+.container-select {
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Отступ снизу */
+  max-width: 300px; /* Ограничиваем максимальную ширину */
+  width: 100%;  
+}
+
+/* Стиль для метки (label) */
+.con {
+  font-family: 'Goldman', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px; /* Отступ снизу от метки */
+}
+
+/* Стиль для выпадающего списка */
+.select-dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-family: 'Goldman', sans-serif;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+}
+
+/* Эффект при наведении */
+.select-dropdown:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Тень при наведении */
+}
+
+/* Эффект при фокусе */
+.select-dropdown:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3); /* Эффект при фокусе */
+}
+
+/* Стилизация для выпадающих опций */
+.select-dropdown option {
+  padding: 10px;
+  background-color: #fff;
+  font-family: 'Goldman', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Стилизация для выпадающего списка на мобильных устройствах */
+@media (max-width: 768px) {
+  .select-dropdown {
+    width: 200px; /* Уменьшаем ширину на мобильных устройствах */
+  }
+}

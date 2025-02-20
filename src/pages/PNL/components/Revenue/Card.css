@@ -1,0 +1,39 @@
+.square {
+  width: 290px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center; /* Выравниваем картинку и текст по вертикали */
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+
+.card-img {
+  width: 56px;
+  height: 56px;
+  margin-left: 10px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px; /* Отступ текста от изображения */
+  gap: 2px; /* Минимальный отступ между заголовком и описанием */
+}
+
+.card-title {
+  color: #A3AED0;
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0; /* Убираем отступы */
+}
+
+.card-discription {
+  color: #1B2559;
+  font-family: 'Goldman', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0; /* Убираем отступы */
+}

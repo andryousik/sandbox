@@ -23,6 +23,10 @@ import './pages/ControlPanel/ControlPanelPage.css';
 
 import PNLPage from './pages/PNL/PNLPage';
 import './pages/PNL/PNLPage.css';
+import './pages/PNL/components/Income/Income'
+import './pages/PNL/components/Income/Income.css'
+import './pages/PNL/components/Income/GraphContainer'
+import './pages/PNL/components/Income/IncomeHeader'
 
 import HistoryPage from './pages/History/HistoryPage';
 import './pages/History/HistoryPage.css';
@@ -37,6 +41,8 @@ import ProfilePage from './pages/Profile/ProfilePage';
 import './pages/Profile/ProfilePage.css';
 
 import './App.css';
+
+import EditContainer from './pages/Security/components/EditContainer/EditContainer';
 
 function App() {
   return (
@@ -53,6 +59,7 @@ function App() {
           <Route path="/security" element={<SecurityPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/edit-container/:id" element={<EditContainer />} />
         </Routes>
       </div>
     </Router>

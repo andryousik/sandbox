@@ -1,9 +1,8 @@
-/*Container status*/
-
+/* Container status */
 .container-status {
   border-radius: 10px;
-  width: 1510px;
-  padding: 20px;
+  width: 100%; /* Контейнер занимает всю ширину доступного пространства */
+  max-width: 1550px;
   background-color: #f9f9f9;
 }
 
@@ -16,8 +15,10 @@
 }
 
 table {
-  width: 100%; /* Таблица будет занимать всю ширину контейнера */
+  width: 90%;
+  max-width: 1500px;
   border-collapse: collapse; /* Убираем двойные линии между ячейками */
+
 }
 
 th, td {
@@ -41,9 +42,8 @@ button {
 }
 
 button:hover {
-  background-color: #3069fa
+  background-color: #3069fa;
 }
-
 
 /* Стили для иконок статуса */
 .status-icon {
@@ -52,12 +52,10 @@ button:hover {
   height: 20px;
   border-radius: 50%;
   margin-left: 8px;
-  
   position: relative;
-  background-color: transparent; /* Сделаем фоновый цвет прозрачным, чтобы только внешний круг был виден */
+  background-color: transparent;
 }
 
-/* Белый круг в центре */
 .inner-circle {
   position: absolute;
   top: 50%;  /* Сдвигаем по вертикали в центр */
@@ -80,4 +78,25 @@ button:hover {
 
 .broken {
   background-color: red; /* Красный круг для broken */
+}
+
+/* Медиазапросы для экрана больше 768px */
+@media (min-width: 768px) {
+  .container-status {
+    max-width: 1550px; /* Размер для больших экранов */
+    padding: 20px;
+  }
+
+  .container-status h2 {
+    font-size: 24px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 }

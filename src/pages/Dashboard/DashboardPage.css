@@ -1,20 +1,21 @@
 /* Общие стили для всей страницы */
 .dashboard {
   display: flex;
+  flex: 1; /* Растягиваем на всю доступную ширину */
   flex-direction: column;
-  margin-left: 321px;
   padding: 20px;
-  width: 100%; 
-  max-width: 1550px;
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh; /* Высота экрана */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  
 }
-
 /* Стили для заголовков и других элементов */
 .Header, .TimeFrameSelector, .Stats, .ContainerStatus, .PNL {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .divider {
-  margin: 10px 0; 
-  border: 1px solid #ddd; 
+  margin: 10px 0;
+  border: 1px solid #ddd;
 }

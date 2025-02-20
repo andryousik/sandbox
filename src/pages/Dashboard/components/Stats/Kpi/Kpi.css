@@ -1,0 +1,48 @@
+.kpi-element {
+  width: 180px;
+  height: 170px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+}
+
+.kpi-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.kpi-text {
+  flex-grow: 1; 
+}
+
+.kpi-header {
+  color: #00000070;
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.kpi-title {
+  font-family: 'Goldman', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0;
+  padding-left: 5px;
+}
+
+.kpi-img {
+  width: 100%; 
+  height: auto; 
+  max-height: 60px; 
+  object-fit: contain; 
+  align-self: center;
+}

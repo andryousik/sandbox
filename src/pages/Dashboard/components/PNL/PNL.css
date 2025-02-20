@@ -3,12 +3,12 @@
   display: flex;
   flex-wrap: wrap; /* Даем возможность компонентам переноситься на новую строку, если они не помещаются */
   gap: 20px; /* Добавим отступ между левой и правой панелью */
-  width: 1550px; /* Обеспечим полную ширину контейнера */
+  width: 100%; /* Обеспечим полную ширину контейнера */
   margin-top: 20px;
 }
 
 /* Стиль для левой панели */
-.left {
+.pnl-right {
   background-color: #fff;
   border-radius: 10px;
   height: 328px;
@@ -17,12 +17,14 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  flex: 1;
   overflow: hidden; /* Убираем возможную прокрутку внутри */
+  max-width: 600px; /* Ограничиваем максимальную ширину */
+  width: 100%; /* Позволяем сжиматься при уменьшении экрана */
+
 }
 
-/* Стиль для правой панели */
-.right {
+/* Правая панель (график) */
+.pnl-left {
   background-color: #fff;
   border-radius: 10px;
   height: 328px;
@@ -31,6 +33,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  flex: 2;
+  max-width: 920px; /* Ограничиваем максимальную ширину */
+  width: 100%; /* Позволяем сжиматься при уменьшении экрана */
 }
-

@@ -1,0 +1,10 @@
+.revenue{
+  width: 100%;
+  display: flex;
+  justify-content: row;
+  padding: 20px 0;
+  gap:20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1550px;
+}

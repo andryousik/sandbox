@@ -1,12 +1,13 @@
 /* Обновленные стили для .pnl */
-.pnl-page{
+.pnl-page {
   display: flex;
+  flex: 1; /* Растягиваем на всю доступную ширину */
   flex-direction: column;
-  margin-left: 321px;
   padding: 20px;
-  width: 100%; 
-  max-width: 1550px;
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh; /* Высота экрана */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
 
 .divider {

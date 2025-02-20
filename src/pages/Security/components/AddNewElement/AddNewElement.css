@@ -1,0 +1,71 @@
+.add-button {
+  background-color: #000000; /* Зеленый цвет фона */
+  color: white; /* Белый цвет текста */
+  font-size: 20px; /* Увеличенный размер шрифта */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Без рамки */
+  width: 20px;
+  height: 20px;
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавные переходы */
+}
+
+.add-button:hover {
+  background-color: #45a049; /* Темно-зеленый цвет при наведении */
+  transform: scale(1.1); /* Легкое увеличение кнопки */
+}
+
+.add-button:focus {
+  outline: none; /* Убираем стандартное обрамление при фокусе */
+}
+
+.add-button:active {
+  transform: scale(0.95); /* Сжатие кнопки при нажатии */
+}
+
+.button-row{
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
+  gap:5px;
+}
+
+.button-row h1{
+  color: #000000;
+  font-family: 'Goldman', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.container-list{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap:10px;
+  flex-wrap: wrap;
+  max-width: 1550px;
+}
+
+.delete-button {
+  background-color:#00000070;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  height: 40px; 
+  width: 100px;
+}
+
+.delete-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.delete-button:hover:not(:disabled) {
+  background-color: darkred;
+}

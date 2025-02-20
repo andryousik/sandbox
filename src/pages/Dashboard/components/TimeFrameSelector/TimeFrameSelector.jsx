@@ -1,6 +1,7 @@
 import React from 'react';
+import './TimeFrameSelector.css';
 
-const timeframes = ["1 day", "1 week", "1 month", "1 year", "All time"];
+const timeframes = ["day", "week", "month", "year", "All time"];
 
 const TimeFrameSelector = ({ selectedTimeframe, setSelectedTimeframe }) => {
   return (

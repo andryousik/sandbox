@@ -1,0 +1,45 @@
+
+.energy-box{
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+}
+
+.energy-box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.energy-box-content-header{
+  color: #00000070;
+  font-family: 'Goldman', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.energy-box-content-title{
+  font-family: 'Goldman', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0;
+  padding-left: 5px;
+}
+
+.energy-box-img {
+  width: 100%; /* Изображение растягивается на всю ширину */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  max-height: 60px; /* Ограничение максимальной высоты */
+  object-fit: contain; /* Гарантирует, что изображение не обрежется */
+  align-self: center; /* Центрирует изображение в контейнере */
+}
